@@ -31,6 +31,9 @@ MiRA (Marginal-induced Attention Redistribution) is a lightweight plug-in module
 - [SAMM](https://repository.mmu.ac.uk/articles/journal_contribution/SAMM_A_Spontaneous_Micro-Facial_Movement_Dataset/32439684?file=64997748)
 - [MMEW](https://github.com/benxianyeteam/MMEW-Dataset)
 
+The original datasets should be downloaded from their respective official websites due to their licensing policies. <br>
+We provide the **metadata CSV files** used in our experiments, containing dataset-specific information required for training and evaluation.
+
 ## Pre-training
 
 ## Fine-tuning with pre-trained models
