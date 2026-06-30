@@ -5,5 +5,8 @@ Seongro Yoon<sup>1</sup>, Donghyeon Cho<sup>2</sup>, Jinsun Park<sup>3</sup>, Fr
 
 <p align="center">
   <img src="assets/fig1_frame_marginal_modules.png" width="48%">
+</p>
+<p align="center">
   <img src="assets/fig2_illustration_method.png" width="48%">
 </p>
+
