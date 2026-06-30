@@ -32,7 +32,7 @@ MiRA (Marginal-induced Attention Redistribution) is a lightweight plug-in module
 - [MMEW](https://github.com/benxianyeteam/MMEW-Dataset)
 
 The original datasets should be downloaded from their respective official websites due to their licensing policies. <br>
-We provide the **metadata CSV files** ([path](datasets/dataSpecCSV_combined)) used in our experiments, containing dataset-specific information required for training and evaluation.
+We provide the **metadata CSV files** (in [datasets/dataSpecCSV_combined](datasets/dataSpecCSV_combined)) used in our experiments, containing dataset-specific information required for training and evaluation.
 
 ## Environment
 
