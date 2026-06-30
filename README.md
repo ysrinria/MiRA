@@ -19,15 +19,15 @@ MiRA (Marginal-induced Attention Redistribution) is a lightweight plug-in module
 
 ## Datasets
 
-**Pre-training: Million-Scale Unlabeled Facial Videos**
+**Pre-training: million-scale unlabeled facial videos**
 - [VoxCeleb2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html) (1.2M videos)
 
-**Fine-tuning: Downstream Facial Expression Recognition**
+**Fine-tuning: downstream facial expression recognition**
 - [DFEW](https://dfew-dataset.github.io/) (12K video clips)
 - [MAFW](https://mafw-database.github.io/MAFW/) (10K video clips)
 - [FERV39k](https://wangyanckxx.github.io/Proj_CVPR2022_FERV39k.html) (39K video clips)
 
-**k-NN Probing: Micro-Expression Recognition**
+**k-NN Probing: micro-expression recognition**
 - [SAMM](https://repository.mmu.ac.uk/articles/journal_contribution/SAMM_A_Spontaneous_Micro-Facial_Movement_Dataset/32439684?file=64997748)
 - [MMEW](https://github.com/benxianyeteam/MMEW-Dataset)
 
