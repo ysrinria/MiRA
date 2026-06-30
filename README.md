@@ -34,6 +34,8 @@ MiRA (Marginal-induced Attention Redistribution) is a lightweight plug-in module
 The original datasets should be downloaded from their respective official websites due to their licensing policies. <br>
 We provide the **metadata CSV files** used in our experiments, containing dataset-specific information required for training and evaluation.
 
+## Environment
+
 ## Pre-training
 
 ## Fine-tuning with pre-trained models
