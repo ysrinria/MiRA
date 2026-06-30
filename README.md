@@ -8,6 +8,9 @@ François Brémond<sup>1</sup> <br>
 <sup>2</sup> Hanyang University, South Korea &nbsp;&nbsp; 
 <sup>3</sup> Pusan National University, South Korea
 
+#### Contact: seong-ro.yoon@inria.fr
+> We are actively conducting interdisciplinary research at the intersection of affective computing and related domains. If you are interested in discussions or collaborations, feel free to reach out.
+
 <p align="center">
   <img src="assets/fig1_frame_marginal_modules.png" width="70%">
 </p>
@@ -60,4 +63,6 @@ pip install -r requirements.txt
 ## Pre-training
 
 ## Fine-tuning with pre-trained models
+
+## Citation
 
