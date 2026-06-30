@@ -38,6 +38,25 @@ For convenience, we also provide a **sample directory structure** (one example p
 
 ## Environment
 
+Our implementation was developed and tested with the following environment:
+
+- Python 3.8.19
+- CUDA 12.1
+- cuDNN 9.2
+- GCC 11.3
+- PyTorch 2.6.0
+- torchvision 0.21.0
+- timm 0.4.12
+- deepspeed 0.16.6
+- decord 0.6.0
+
+Install the required Python packages via:
+
+```bash
+pip install -r requirements.txt
+```
+
+
 ## Pre-training
 
 ## Fine-tuning with pre-trained models
