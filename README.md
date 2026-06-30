@@ -9,7 +9,7 @@ François Brémond<sup>1</sup> <br>
 <sup>3</sup> Pusan National University, South Korea
 
 #### Contact: seong-ro.yoon@inria.fr
-> We are actively conducting interdisciplinary research in affective computing and related fields, and are always open to discussions and collaborations. Feel free to reach out!
+> We are actively conducting interdisciplinary research at the intersection of affective computing and related fields, and are always open to discussions and collaborations. Feel free to reach out!
 
 <p align="center">
   <img src="assets/fig1_frame_marginal_modules.png" width="70%">
@@ -50,8 +50,8 @@ Our implementation was developed and tested with the following environment:
 - PyTorch 2.6.0
 - torchvision 0.21.0
 - timm 0.4.12
-- deepspeed 0.16.6
 - decord 0.6.0
+- deepspeed 0.16.6
 
 Install the required Python packages via:
 
