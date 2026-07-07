@@ -62,7 +62,7 @@ Install the required Python packages via:
 pip install -r requirements.txt
 ```
 
-## Confusion Matrices
+## Main Results with Confusion Matrices
 
 Representative confusion matrices after **VoxCeleb2 pre-training** and subsequent **fine-tuning on each target dataset**: **DFEW (Fold 1)**, **MAFW (Fold 1)**, and **FERV39k**, using **FlashLite** with ViT-B, ViT-L, and ViT-H. Click each image to view it in full size. Additional confusion matrices for other folds are available under the corresponding [`confusion_matrix/`](confusion_matrix/) subdirectories.
 
