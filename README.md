@@ -55,7 +55,8 @@ Our implementation was developed and tested with the following environment:
 - timm 0.4.12
 - decord 0.6.0
 - deepspeed 0.16.6
-
+- NVIDIA H100 GPUs (40 GPUs for pre-training; 1–4 GPUs for fine-tuning)
+  
 Install the required Python packages via:
 
 ```bash
