@@ -23,6 +23,8 @@ François Brémond<sup>1</sup> <br>
 
 MiRA (Marginal-induced Attention Redistribution) is a parameter-free, lightweight plug-in framework for foundational video transformers that introduces frame-marginal attention redistribution for facial expression understanding. It encourages the model to focus on subtle intra-face spatio-temporal dynamics, enabling more effective representation learning during large-scale self-supervised pre-training as well as downstream fine-tuning. MiRA provides both **Exact mode** for principled post-softmax attention redistribution and **FlashLite** mode, which seamlessly integrates with FlashAttention kernels to provide an efficient approximation of the exact formulation while preserving high training and inference efficiency.
 
+Our implementation follows the [official VideoMAE](https://github.com/mcg-nju/videomae) framework, augmenting each transformer attention block with the proposed **AttentionMiRA** module. For the core implementation, please refer to the `AttentionMiRA(nn.Module)` class in [`modeling_finetune.py`](modeling_finetune.py).
+
 ## Datasets
 
 **Pre-training: million-scale unlabeled facial videos**
