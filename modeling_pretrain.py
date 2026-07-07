@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import torch.utils.checkpoint as checkpoint
 from functools import partial
 
-from modeling_finetune import AttentionFMP, Block, ST_Block, _cfg, PatchEmbed, get_sinusoid_encoding_table
+from modeling_finetune import AttentionMiRA, Block, ST_Block, _cfg, PatchEmbed, get_sinusoid_encoding_table
 from timm.models.registry import register_model
 from timm.models.layers import trunc_normal_ as __call_trunc_normal_
 
@@ -163,7 +163,7 @@ class PretrainVisionTransformerEncoder(nn.Module):
             qk_scale_i = getattr(attn_origin, "scale", None)
             attn_drop_i = getattr(attn_origin, "attn_drop", nn.Dropout(0.0)).p if hasattr(attn_origin, "attn_drop") else 0.0
             proj_drop_i = getattr(attn_origin, "proj_drop", nn.Dropout(0.0)).p if hasattr(attn_origin, "proj_drop") else 0.0
-            self.blocks[i].attn = AttentionFMP(
+            self.blocks[i].attn = AttentionMiRA(
                 dim=self.embed_dim, num_heads=num_heads_i,
                 qkv_bias=qkv_bias_i, qk_scale=qk_scale_i,
                 attn_drop=attn_drop_i, proj_drop=proj_drop_i,

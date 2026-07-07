@@ -286,10 +286,8 @@ class ST_Block(nn.Module): # spatial temporal Block
 
 
 ###################### MY CODE #############################
-class AttentionFMP(nn.Module):
+class AttentionMiRA(nn.Module):
     """
-    Frame-Marginal Micro-dynamics Reweighted Attention (MiRA).
-
     Two execution modes:
       - Exact mode:
           post-softmax framewise reweighting + renormalization
@@ -893,7 +891,7 @@ class VisionTransformer(nn.Module):
             qk_scale_i = getattr(attn_origin, "scale", None)
             attn_drop_i = getattr(attn_origin, "attn_drop", nn.Dropout(0.0)).p if hasattr(attn_origin, "attn_drop") else 0.0
             proj_drop_i = getattr(attn_origin, "proj_drop", nn.Dropout(0.0)).p if hasattr(attn_origin, "proj_drop") else 0.0
-            self.blocks[i].attn = AttentionFMP(
+            self.blocks[i].attn = AttentionMiRA(
                 dim=self.embed_dim, num_heads=num_heads_i,
                 qkv_bias=qkv_bias_i, qk_scale=qk_scale_i,
                 attn_drop=attn_drop_i, proj_drop=proj_drop_i,
