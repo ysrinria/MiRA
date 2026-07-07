@@ -61,19 +61,17 @@ pip install -r requirements.txt
 
 ## Confusion Matrices
 
-Representative confusion matrices on **DFEW (Fold 1)**, **MAFW (Fold 1)**, and **FERV39k** using **FlashLite** with ViT-B, ViT-L, and ViT-H.
+Representative confusion matrices after **VoxCeleb2 pre-training** and subsequent **fine-tuning on each target dataset**: **DFEW (Fold 1)**, **MAFW (Fold 1)**, and **FERV39k**, using **FlashLite** with ViT-B, ViT-L, and ViT-H. Click each image to view it in full size. Additional confusion matrices for other folds are available under the corresponding [`confusion_matrix/`](confusion_matrix/) subdirectories.
 
 | Backbone | DFEW (Fold 1) | MAFW (Fold 1) | FERV39k |
 |:---------:|:-------------:|:-------------:|:--------:|
-| **ViT-B** | <img src="confusion_matrix/BASEflash/DFEW/DFEW_fold1_BASEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/BASEflash/MAFW/MAFW_fold1_BASEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/BASEflash/FERV39k/FERV39k_BASEflash_confusion_matrix.png" width="260"> |
-| **ViT-L** | <img src="confusion_matrix/LARGEflash/DFEW/DFEW_fold1_LARGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/LARGEflash/MAFW/MAFW_fold1_LARGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/LARGEflash/FERV39k/FERV39k_LARGEflash_confusion_matrix.png" width="260"> |
-| **ViT-H** | <img src="confusion_matrix/HUGEflash/DFEW/DFEW_fold1_HUGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/HUGEflash/MAFW/MAFW_fold1_HUGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/HUGEflash/FERV39k/FERV39k_HUGEflash_confusion_matrix.png" width="260"> |
+| **ViT-B FlashLite** | <img src="confusion_matrix/BASEflash/DFEW/DFEW_fold1_BASEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/BASEflash/MAFW/MAFW_fold1_BASEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/BASEflash/FERV39k/FERV39k_BASEflash_confusion_matrix.png" width="260"> |
+| **ViT-L FlashLite** | <img src="confusion_matrix/LARGEflash/DFEW/DFEW_fold1_LARGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/LARGEflash/MAFW/MAFW_fold1_LARGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/LARGEflash/FERV39k/FERV39k_LARGEflash_confusion_matrix.png" width="260"> |
+| **ViT-H FlashLite** | <img src="confusion_matrix/HUGEflash/DFEW/DFEW_fold1_HUGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/HUGEflash/MAFW/MAFW_fold1_HUGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/HUGEflash/FERV39k/FERV39k_HUGEflash_confusion_matrix.png" width="260"> |
 
 ## Pre-training
 
 ## Fine-tuning with pre-trained models
-
-## Citation
 
 ## Citation
 
