@@ -14,7 +14,7 @@ class DataAugmentationForVideoMAE(object):
         self.input_std = [0.229, 0.224, 0.225]  # IMAGENET_DEFAULT_STD
         normalize = GroupNormalize(self.input_mean, self.input_std)
         # GroupMultiScaleCrop: BASE [1, .875, .75, .66], LARGE/HUGE [1, .875, .75, .66, .60, .60, .55, .55]
-        self.train_augmentation = GroupMultiScaleCrop(args.input_size, [1, .875, .75, .66, .60, .60, .55, .55])  
+        self.train_augmentation = GroupMultiScaleCrop(args.input_size, [1, .875, .75, .66])  
         self.transform = transforms.Compose([                            
             self.train_augmentation,
             Stack(roll=False),
