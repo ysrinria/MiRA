@@ -66,3 +66,17 @@ pip install -r requirements.txt
 
 ## Citation
 
+## Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@article{yoon2026reweighting,
+  title={Reweighting Framewise Attention in Video Transformers for Facial Expression Understanding},
+  author={Yoon, Seongro and Cho, Donghyeon and Park, Jinsun and Br{\'e}mond, Fran{\c{c}}ois},
+  journal={arXiv preprint arXiv:2606.30611},
+  year={2026},
+  note={Accepted to ECCV 2026}
+}
+```
+
