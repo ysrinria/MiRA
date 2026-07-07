@@ -59,6 +59,15 @@ Install the required Python packages via:
 pip install -r requirements.txt
 ```
 
+## Confusion Matrices
+
+Representative confusion matrices on **DFEW (Fold 1)**, **MAFW (Fold 1)**, and **FERV39k** using **FlashLite** with ViT-B, ViT-L, and ViT-H.
+
+| Backbone | DFEW (Fold 1) | MAFW (Fold 1) | FERV39k |
+|:---------:|:-------------:|:-------------:|:--------:|
+| **ViT-B** | <img src="confusion_matrix/BASEflash/DFEW/DFEW_fold1_BASEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/BASEflash/MAFW/MAFW_fold1_BASEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/BASEflash/FERV39k/FERV39k_BASEflash_confusion_matrix.png" width="260"> |
+| **ViT-L** | <img src="confusion_matrix/LARGEflash/DFEW/DFEW_fold1_LARGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/LARGEflash/MAFW/MAFW_fold1_LARGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/LARGEflash/FERV39k/FERV39k_LARGEflash_confusion_matrix.png" width="260"> |
+| **ViT-H** | <img src="confusion_matrix/HUGEflash/DFEW/DFEW_fold1_HUGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/HUGEflash/MAFW/MAFW_fold1_HUGEflash_confusion_matrix.png" width="260"> | <img src="confusion_matrix/HUGEflash/FERV39k/FERV39k_HUGEflash_confusion_matrix.png" width="260"> |
 
 ## Pre-training
 
