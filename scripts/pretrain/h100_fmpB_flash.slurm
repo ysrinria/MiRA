@@ -23,7 +23,7 @@ module load miniforge/24.9.0
 
 conda activate VideoMAE
 
-OUTPUT_DIR='./output/cross_reconstruct/fmp/pretrain/flash_vox_celeb2_pretrain_BASE_K12_patch16_224_frame_16x4_tube_mask_ratio_0.9_e301'
+OUTPUT_DIR='./output/pretrain/flash_vox_celeb2_pretrain_BASE_K12_patch16_224_frame_16x4_tube_mask_ratio_0.9_e301'
 DATA_PATH='./datasets/dataSpecCSV_combined/vox-celeb-dataset_video_specs_updated_only_inliers.csv'
 
 export MASTER_PORT=$((12000 + $RANDOM % 20000))
