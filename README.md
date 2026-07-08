@@ -83,10 +83,10 @@ The pretrained checkpoints are available on Hugging Face.
 
 | Backbone | Mode | Pre-training Dataset | Download |
 |:---------:|:----:|:--------------------:|:--------:|
-| ViT-B | Exact | VoxCeleb2 | 🤗 [BASE](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE) |
-| ViT-B | FlashLite | VoxCeleb2 | 🤗 [BASE_FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE_FlashLite) |
-| ViT-L | FlashLite | VoxCeleb2 | 🤗 [LARGE_FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/LARGE_FlashLite) |
-| ViT-H | FlashLite | VoxCeleb2 | 🤗 [HUGE_FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/HUGE_FlashLite) |
+| ViT-B/16 | Exact | VoxCeleb2 | 🤗 [BASE](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE) |
+| ViT-B/16 | FlashLite | VoxCeleb2 | 🤗 [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE_FlashLite) |
+| ViT-L/16 | FlashLite | VoxCeleb2 | 🤗 [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/LARGE_FlashLite) |
+| ViT-H/16 | FlashLite | VoxCeleb2 | 🤗 [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/HUGE_FlashLite) |
 
 
 ## Fine-tuning with pre-trained models
