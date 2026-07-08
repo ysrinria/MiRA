@@ -35,7 +35,6 @@ srun python -u run_mae_pretraining.py \
         --data_path ${DATA_PATH} \
         --mask_type tube \
         --mask_ratio 0.9 \
-        --no_aug_paired_input \
         --model pretrain_videomae_large_patch16_224 \
         --decoder_depth 12 \
         --batch_size 64 \
@@ -49,8 +48,6 @@ srun python -u run_mae_pretraining.py \
         --epochs 201 \
         --log_dir ${OUTPUT_DIR} \
         --output_dir ${OUTPUT_DIR} \
-        --no_aug_paired_input \
-        --use_auto_reconstruct \
         --add_fmp_attention \
         --fmp_use_residual \
         --fmp_num_last_layers 24 \
