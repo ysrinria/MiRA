@@ -86,10 +86,10 @@ The pretrained checkpoints are available on Hugging Face.
 
 | Backbone | Mode | Pretraining Dataset | Download Checkpoint | Training Script |
 |:---------:|:----:|:--------------------:|:--------:|:-------------------:|
-| ViT-B/16 | Exact | VoxCeleb2 | 🤗 [BASE](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpB.slurm) |
-| ViT-B/16 | FlashLite | VoxCeleb2 | 🤗 [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpB_flash.slurm) |
-| ViT-L/16 | FlashLite | VoxCeleb2 | 🤗 [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/LARGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpL_flash.slurm) |
-| ViT-H/16 | FlashLite | VoxCeleb2 | 🤗 [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/HUGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpH_flash.slurm) |
+| ViT-B/16 | Exact | VoxCeleb2 | [BASE](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpB.slurm) |
+| ViT-B/16 | FlashLite | VoxCeleb2 | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/BASE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpB_flash.slurm) |
+| ViT-L/16 | FlashLite | VoxCeleb2 | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/LARGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpL_flash.slurm) |
+| ViT-H/16 | FlashLite | VoxCeleb2 | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/HUGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpH_flash.slurm) |
 
 ### Pre-training from Scratch
 TBA
