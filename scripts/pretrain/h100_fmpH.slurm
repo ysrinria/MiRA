@@ -23,7 +23,7 @@ module load miniforge/24.9.0
 
 conda activate VideoMAE
 
-OUTPUT_DIR='./output/pretrain/vox_celeb2_pretrain_HUGE_K32_patch16_224_frame_16x4_tube_mask_ratio_0.9_e301'
+OUTPUT_DIR='./output/pretrain/vox_celeb2_pretrain_HUGE_K32_patch16_224_frame_16x4_tube_mask_ratio_0.9_e201'
 DATA_PATH='./datasets/dataSpecCSV_combined/vox-celeb-dataset_video_specs_updated_only_inliers.csv'
 
 export MASTER_PORT=$((12000 + $RANDOM % 20000))
@@ -46,7 +46,7 @@ srun python -u run_mae_pretraining.py \
         --opt_betas 0.9 0.95 \
         --warmup_epochs 20 \
         --save_ckpt_freq 20 \
-        --epochs 301 \
+        --epochs 201 \
         --log_dir ${OUTPUT_DIR} \
         --output_dir ${OUTPUT_DIR} \
         --no_aug_paired_input \
