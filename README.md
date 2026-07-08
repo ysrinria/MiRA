@@ -88,7 +88,16 @@ The pretrained checkpoints are available on Hugging Face.
 | ViT-L/16 | FlashLite | VoxCeleb2 | 🤗 [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/LARGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpL_flash.slurm) |
 | ViT-H/16 | FlashLite | VoxCeleb2 | 🤗 [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/HUGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpH_flash.slurm) |
 
-## Fine-tuning with pre-trained models
+### Pre-training from Scratch
+TBA
+
+## Fine-tuning 
+
+### Finetuned Models
+TBA
+
+### Fine-tuning from Pretrained Checkpoints
+TBA
 
 ## Citation
 
