@@ -38,7 +38,7 @@ srun python -u run_mae_pretraining.py \
         --no_aug_paired_input \
         --model pretrain_videomae_large_patch16_224 \
         --decoder_depth 12 \
-        --batch_size 96 \
+        --batch_size 64 \
         --num_workers 24 \
         --num_frames 16 \
         --sampling_rate 4 \
