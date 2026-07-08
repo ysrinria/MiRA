@@ -46,7 +46,7 @@ srun python -u run_mae_pretraining.py \
         --opt_betas 0.9 0.95 \
         --warmup_epochs 40 \
         --save_ckpt_freq 20 \
-        --epochs 301 \
+        --epochs 201 \
         --log_dir ${OUTPUT_DIR} \
         --output_dir ${OUTPUT_DIR} \
         --no_aug_paired_input \
