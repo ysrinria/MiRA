@@ -39,8 +39,11 @@ Our implementation follows the [official VideoMAE](https://github.com/mcg-nju/vi
 - [SAMM](https://repository.mmu.ac.uk/articles/journal_contribution/SAMM_A_Spontaneous_Micro-Facial_Movement_Dataset/32439684?file=64997748)
 - [MMEW](https://github.com/benxianyeteam/MMEW-Dataset)
 
-The original datasets should be downloaded from their respective official websites due to their licensing policies. <br>
+The original datasets should be downloaded from their respective official websites due to their licensing policies. 
+
 We provide the **metadata CSV files** (in [`datasets/dataSpecCSV_combined/`](datasets/dataSpecCSV_combined)) used in our experiments, containing dataset-specific information required for training and evaluation.
+> [!NOTE]
+> The metadata file `vox-celeb-dataset_video_specs_updated_only_inliers.csv` is not included in this repository due to its large size. It can be downloaded from our [Hugging Face repository](https://huggingface.co/ysrinria/MiRA/tree/main). Metadata fields that depend on the local dataset (e.g., `bool_file`) should be updated according to your downloaded VoxCeleb2 data.
 
 For convenience, we also provide a **sample directory structure** (one example path per dataset) illustrating the expected organization of the downloaded datasets. See the example directory layouts under [`datasets/`](datasets/).
 
