@@ -106,7 +106,7 @@ The finetuned checkpoints are available on Hugging Face.
 <th align="center">Backbone</th>
 <th align="center">Mode</th>
 <th align="center">Download Checkpoint</th>
-<th align="center">Fine-tuning Script</th>
+<th align="center">Training Script</th>
 </tr>
 </thead>
 
@@ -192,6 +192,9 @@ The finetuned checkpoints are available on Hugging Face.
 </table>
 
 ### Fine-tuning from Pretrained Checkpoints
+TBA
+
+## Only Inference
 TBA
 
 ## Citation
