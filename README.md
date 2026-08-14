@@ -96,6 +96,20 @@ TBA
 
 ## Fine-tuning 
 
+## Fine-tuned Models
+
+| Dataset | Backbone | Mode | Fold | Download Checkpoint | Fine-tuning Script |
+|:-------:|:--------:|:----:|:----:|:-------------------:|:------------------:|
+| DFEW | ViT-B/16 | FlashLite | Fold 1 | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/BASEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/BASE) |
+| DFEW | ViT-L/16 | FlashLite | Fold 1 | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/LARGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/LARGE) |
+| DFEW | ViT-H/16 | FlashLite | Fold 1 | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/HUGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/HUGE) |
+| MAFW | ViT-B/16 | FlashLite | Fold 1 | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/BASEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/BASE) |
+| MAFW | ViT-L/16 | FlashLite | Fold 1 | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/LARGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/LARGE) |
+| MAFW | ViT-H/16 | FlashLite | Fold 1 | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/HUGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/HUGE) |
+| FERV39k | ViT-B/16 | FlashLite | – | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/BASEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/BASE) |
+| FERV39k | ViT-L/16 | FlashLite | – | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/LARGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/LARGE) |
+| FERV39k | ViT-H/16 | FlashLite | – | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/HUGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/HUGE) |
+
 ### Finetuned Models
 TBA
 
