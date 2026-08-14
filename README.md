@@ -96,36 +96,100 @@ TBA
 
 ## Fine-tuning 
 
-## Fine-tuned Models
+### Fine-tuned Models
 The finetuned checkpoints are available on Hugging Face.
 
-### DFEW
-| Backbone | Mode | Download Checkpoint | Fine-tuning Script |
-|:---------:|:----:|:-------------------:|:------------------:|
-| ViT-B/16 | FlashLite | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/BASEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/BASE) |
-| ViT-L/16 | FlashLite | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/LARGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/LARGE) |
-| ViT-H/16 | FlashLite | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/HUGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/HUGE) |
+<table>
+<thead>
+<tr>
+<th align="center">Dataset</th>
+<th align="center">Backbone</th>
+<th align="center">Mode</th>
+<th align="center">Download Checkpoint</th>
+<th align="center">Fine-tuning Script</th>
+</tr>
+</thead>
 
----
+<tbody>
 
-### MAFW
-| Backbone | Mode | Download Checkpoint | Fine-tuning Script |
-|:---------:|:----:|:-------------------:|:------------------:|
-| ViT-B/16 | FlashLite | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/BASEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/BASE) |
-| ViT-L/16 | FlashLite | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/LARGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/LARGE) |
-| ViT-H/16 | FlashLite | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/HUGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/HUGE) |
+<!-- ======================== DFEW ======================== -->
 
----
+<tr>
+<td rowspan="3" align="center" valign="middle"><strong>DFEW</strong></td>
+<td align="center">ViT-B/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/BASEflash">BASE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/BASE">script</a></td>
+</tr>
 
-### FERV39k
-| Backbone | Mode | Download Checkpoint | Fine-tuning Script |
-|:---------:|:----:|:-------------------:|:------------------:|
-| ViT-B/16 | FlashLite | [BASE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/BASEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/BASE) |
-| ViT-L/16 | FlashLite | [LARGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/LARGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/LARGE) |
-| ViT-H/16 | FlashLite | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/HUGEflash) | [script](https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/HUGE) |
+<tr>
+<td align="center">ViT-L/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/LARGEflash">LARGE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/LARGE">script</a></td>
+</tr>
 
-### Finetuned Models
-TBA
+<tr>
+<td align="center">ViT-H/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/DFEW/fold1/HUGEflash">HUGE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/DFEW/HUGE">script</a></td>
+</tr>
+
+<tr><td colspan="5" height="18"></td></tr>
+
+<!-- ======================== MAFW ======================== -->
+
+<tr>
+<td rowspan="3" align="center" valign="middle"><strong>MAFW</strong></td>
+<td align="center">ViT-B/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/BASEflash">BASE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/BASE">script</a></td>
+</tr>
+
+<tr>
+<td align="center">ViT-L/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/LARGEflash">LARGE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/LARGE">script</a></td>
+</tr>
+
+<tr>
+<td align="center">ViT-H/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/MAFW/fold1/HUGEflash">HUGE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/MAFW/HUGE">script</a></td>
+</tr>
+
+<tr><td colspan="5" height="18"></td></tr>
+
+<!-- ======================== FERV39k ======================== -->
+
+<tr>
+<td rowspan="3" align="center" valign="middle"><strong>FERV39k</strong></td>
+<td align="center">ViT-B/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/BASEflash">BASE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/BASE">script</a></td>
+</tr>
+
+<tr>
+<td align="center">ViT-L/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/LARGEflash">LARGE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/LARGE">script</a></td>
+</tr>
+
+<tr>
+<td align="center">ViT-H/16</td>
+<td align="center">FlashLite</td>
+<td align="center"><a href="https://huggingface.co/ysrinria/MiRA/tree/main/finetuned_models/FERV39k/HUGEflash">HUGE-FlashLite</a></td>
+<td align="center"><a href="https://github.com/ysrinria/MiRA/tree/main/scripts/finetune/FERV39k/HUGE">script</a></td>
+</tr>
+
+</tbody>
+</table>
 
 ### Fine-tuning from Pretrained Checkpoints
 TBA
