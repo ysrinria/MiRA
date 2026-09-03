@@ -1,5 +1,5 @@
 # MiRA: Reweighting Framewise Attention in Video Transformers for Facial Expression Understanding.
-[Reweighting Framewise Attention in Video Transformers for Facial Expression Understanding (ECCV 2026)](https://arxiv.org/abs/2606.30611) <br>
+[Reweighting Framewise Attention in Video Transformers for Facial Expression Understanding](https://arxiv.org/abs/2606.30611) <br>
 Seongro Yoon<sup>1</sup> &nbsp;&nbsp;, 
 Donghyeon Cho<sup>2</sup> &nbsp;&nbsp;, 
 Jinsun Park<sup>3</sup> &nbsp;&nbsp;,
@@ -207,7 +207,7 @@ If you find this work useful in your research, please consider citing:
   author={Yoon, Seongro and Cho, Donghyeon and Park, Jinsun and Br{\'e}mond, Fran{\c{c}}ois},
   journal={arXiv preprint arXiv:2606.30611},
   year={2026},
-  note={Accepted to ECCV 2026}
+  note={Accepted to ECCV 2026, then Desk rejected because of incorrect references found}
 }
 ```
 
