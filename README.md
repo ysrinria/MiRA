@@ -206,8 +206,7 @@ If you find this work useful in your research, please consider citing:
   title={Reweighting Framewise Attention in Video Transformers for Facial Expression Understanding},
   author={Yoon, Seongro and Cho, Donghyeon and Park, Jinsun and Br{\'e}mond, Fran{\c{c}}ois},
   journal={arXiv preprint arXiv:2606.30611},
-  year={2026},
-  note={Accepted to ECCV 2026, then Desk rejected because of incorrect references found}
+  year={2026}
 }
 ```
 
