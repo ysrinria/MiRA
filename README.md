@@ -208,13 +208,13 @@ python run_mira_inference.py \
     --view-batch-size 1
 ```
 
-### Input
+#### Input
 The input can be either:
 - a single video file, or
 - a directory containing the image frames of a single video.
 The input type is detected automatically. For frame-based input, images are ordered using the frame numbers in their filenames.
 
-### Checkpoint Configuration
+#### Checkpoint configuration
 
 `--data-set` specifies the dataset on which the checkpoint was fine-tuned:
 - DFEW checkpoint: `DFEW_crop`
@@ -230,21 +230,21 @@ This option selects the checkpoint-specific preprocessing and class-label mappin
   
 The model architecture and number of classes are inferred automatically from the checkpoint.
 
-### Device and Memory
-The script automatically uses CUDA when available. A different device can be selected with --device.
---view-batch-size determines how many test views are processed simultaneously. Use 1 to minimize memory usage on a single GPU, or increase it for faster inference when sufficient memory is available.
-
-### Output
+#### Output
 
 By default, the script prints the top-5 predictions and their probabilities to the terminal.
 
-| Option | Description |
+| option | description |
 |---|---|
 | `--topk K` | Number of predictions to display. Default: `5`. |
 | `--output-json PATH` | Saves predictions, inference settings, sampled-frame indices, and view metadata to a JSON file. |
 | `--class-names LABELS` | Overrides class names using a JSON file, a text file with one label per line, or a comma-separated list. |
 
 `--class-names` is unnecessary for the provided checkpoints because `--data-set` automatically selects the corresponding class-label mapping.
+
+#### Device and Memory
+The script automatically uses CUDA when available. A different device can be selected with --device.
+--view-batch-size determines how many test views are processed simultaneously. Use 1 to minimize memory usage on a single GPU, or increase it for faster inference when sufficient memory is available.
 
 ## Citation
 
