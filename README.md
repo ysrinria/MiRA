@@ -103,26 +103,6 @@ Before running, update the `DATA_PATH` variable in the script to point to your l
 | ViT-L/16 | `h100_fmpL.slurm` | `h100_fmpL_flash.slurm` | 10 × 4 = 40 | 64 | 201 |
 | ViT-H/16 | `h100_fmpH.slurm` | `h100_fmpH_flash.slurm` | 10 × 4 = 40 | 64 | 201 |
 
-```bash
-# ViT-B, Exact mode
-sbatch scripts/pretrain/h100_fmpB.slurm
-
-# ViT-B, FlashLite mode
-sbatch scripts/pretrain/h100_fmpB_flash.slurm
-
-# ViT-L, Exact mode
-sbatch scripts/pretrain/h100_fmpL.slurm
-
-# ViT-L, FlashLite mode
-sbatch scripts/pretrain/h100_fmpL_flash.slurm
-
-# ViT-H, Exact mode
-sbatch scripts/pretrain/h100_fmpH.slurm
-
-# ViT-H, FlashLite mode
-sbatch scripts/pretrain/h100_fmpH_flash.slurm
-```
-
 The key MiRA-specific flags used in these scripts are:
 
 - `--add_fmp_attention` : enable MiRA attention redistribution
