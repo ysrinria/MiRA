@@ -93,22 +93,29 @@ The pretrained checkpoints are available on Hugging Face.
 
 ### Pre-training from Scratch
 
-All training scripts are provided under `scripts/pretrain/`. Each script submits a distributed job via `srun` on SLURM-managed GPUs.
+All scripts share the following configuration:
 
-Before running, update the `DATA_PATH` variable in the script to point to your local VoxCeleb2 metadata CSV (see [Datasets](#datasets)).
+| Argument | Value | Description |
+|----------|-------|-------------|
+| `--mask_type` | `tube` | Spatio-temporal tube masking |
+| `--mask_ratio` | `0.9` | 90% of tokens masked per clip |
+| `--num_frames` | `16` | Frames sampled per clip |
+| `--sampling_rate` | `4` | Temporal stride between frames |
+| `--opt` | `adamw` | Optimizer |
+| `--opt_betas` | `0.9 0.95` | AdamW betas |
+| `--save_ckpt_freq` | `20` | Checkpoint save interval (epochs) |
+| `--add_fmp_attention` | | Enable MiRA attention redistribution |
+| `--fmp_use_residual` | | Residual skip around the redistribution |
 
-| Backbone | Exact mode | FlashLite mode | Nodes × GPUs | Batch size | Epochs |
-|----------|-----------|---------------|:------------:|:----------:|:------:|
-| ViT-B/16 | `h100_fmpB.slurm` | `h100_fmpB_flash.slurm` | 8 × 4 = 32 | 128 | 301 |
-| ViT-L/16 | `h100_fmpL.slurm` | `h100_fmpL_flash.slurm` | 10 × 4 = 40 | 64 | 201 |
-| ViT-H/16 | `h100_fmpH.slurm` | `h100_fmpH_flash.slurm` | 10 × 4 = 40 | 64 | 201 |
+FlashLite mode scripts additionally use `--use_fmp_flashlite`.
 
-The key MiRA-specific flags used in these scripts are:
+Backbone-specific values follow the original VideoMAE configuration, except `--fmp_num_last_layers` which is MiRA-specific:
 
-- `--add_fmp_attention` : enable MiRA attention redistribution
-- `--fmp_num_last_layers N` : apply to the last N encoder layers (12 / 24 / 32 for ViT-B / L / H)
-- `--fmp_use_residual` : residual skip around the redistribution
-- `--use_fmp_flashlite` : use FlashLite mode (omit for Exact mode)
+| Argument | ViT-B | ViT-L | ViT-H |
+|----------|-------|-------|-------|
+| `--decoder_depth` | 4 | 12 | 12 |
+| `--warmup_epochs` | 20 | 40 | 20 |
+| `--fmp_num_last_layers` | 12 | 24 | 32 |
 
 ## Fine-tuning 
 
