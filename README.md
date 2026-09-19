@@ -109,14 +109,6 @@ All scripts share the following configuration:
 
 FlashLite mode scripts additionally use `--use_fmp_flashlite`.
 
-Backbone-specific values follow the original VideoMAE configuration, except `--fmp_num_last_layers` which is MiRA-specific:
-
-| Argument | ViT-B | ViT-L | ViT-H |
-|----------|-------|-------|-------|
-| `--decoder_depth` | 4 | 12 | 12 |
-| `--warmup_epochs` | 20 | 40 | 20 |
-| `--fmp_num_last_layers` | 12 | 24 | 32 |
-
 ## Fine-tuning 
 
 ### Fine-tuned Models
