@@ -243,8 +243,8 @@ By default, the script prints the top-5 predictions and their probabilities to t
 `--class-names` is unnecessary for the provided checkpoints because `--data-set` automatically selects the corresponding class-label mapping.
 
 #### Device and Memory
-The script automatically uses CUDA when available. A different device can be selected with --device.
---view-batch-size determines how many test views are processed simultaneously. Use 1 to minimize memory usage on a single GPU, or increase it for faster inference when sufficient memory is available.
+The script automatically uses CUDA when available. A different device can be selected with `--device`.
+`--view-batch-size` determines how many test views are processed simultaneously. Use 1 to minimize memory usage on a single GPU, or increase it for faster inference when sufficient memory is available.
 
 ## Citation
 
