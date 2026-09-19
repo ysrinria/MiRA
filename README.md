@@ -270,7 +270,7 @@ Optional output arguments include:
 
 - `--topk K` : number of predictions to display. Default: `5`.
 - `--output-json PATH` : saves predictions, settings, frame indices, and view metadata to a JSON file.
-- `--class-names LABELS` : overrides class names using JSON, one-label-per-line text, or comma-separated values.
+- `--class-names LABELS` : overrides class names using JSON, one-label-per-line, or comma-separated list.
 
 `--class-names` is unnecessary for the provided checkpoints because `--data-set` automatically selects the corresponding class-label mapping.
 
