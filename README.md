@@ -208,9 +208,25 @@ The finetuned checkpoints are available on Hugging Face.
 </table>
 
 ### Fine-tuning from Pretrained Checkpoints
-TBA
+Fine-tuning scripts are provided under [`scripts/finetune/`](scripts/finetune/). Select the script matching the target dataset, backbone, fold, and MiRA mode.
 
-아래 블록 내부 내용만 그대로 `README.md`에 복사하면 됩니다. 역슬래시나 제목 앞에 별도의 escape 문자를 추가하지 마세요.
+| Dataset | Configuration | Classes | Splits |
+|---|---|:---:|:---:|
+| DFEW | `DFEW_crop` | 7 | 5 folds |
+| MAFW | `MAFW_crop` | 11 | 5 folds |
+| FERV39k | `FERV39k` | 7 | Single split |
+
+Each dataset directory contains separate configurations for ViT-B, ViT-L, and ViT-H under `BASE`, `LARGE`, and `HUGE`, respectively. For the provided FlashLite pretrained checkpoints, use a fine-tuning script containing `flash` in its filename.
+
+Before running a script, update the following variables:
+
+- `MODEL_PATH` : path to the pretrained checkpoint matching the selected backbone and MiRA mode.
+- `DATA_PATH` : path to the corresponding metadata CSV under [`datasets/dataSpecCSV_combined/`](datasets/dataSpecCSV_combined/).
+- `OUTPUT_DIR` : directory for fine-tuning outputs and checkpoints.
+
+The metadata CSV must reference the locally downloaded dataset. Also adapt the SLURM resource directives, module configuration, and Conda environment to your system.
+
+The provided scripts use DeepSpeed and preserve the model-specific MiRA configuration, including the redistribution mode, residual connection, statistics mode, and number of reweighted layers. To reproduce the reported results, retain these settings and use the corresponding dataset split.
 
 ## Only Inference
 Download a fine-tuned checkpoint from the table above and run:
@@ -254,7 +270,7 @@ Optional output arguments include:
 
 - `--topk K` : number of predictions to display. Default: `5`.
 - `--output-json PATH` : saves predictions, settings, frame indices, and view metadata to a JSON file.
-- `--class-names LABELS` : overrides class names using JSON, one-label-per-line text, or a comma-separated list.
+- `--class-names LABELS` : overrides class names using JSON, one-label-per-line text, or comma-separated values.
 
 `--class-names` is unnecessary for the provided checkpoints because `--data-set` automatically selects the corresponding class-label mapping.
 
