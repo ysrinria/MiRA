@@ -215,17 +215,15 @@ Select the script matching the target dataset, backbone, fold, and MiRA mode.
 | MAFW | `MAFW_crop` | 11 | 5 folds |
 | FERV39k | `FERV39k` | 7 | single split |
 
-Each dataset directory contains separate configurations for ViT-B, ViT-L, and ViT-H under `BASE`, `LARGE`, and `HUGE`, respectively. For the provided FlashLite pretrained checkpoints, use a fine-tuning script containing `flash` in its filename.
-
 Before running a script, update the following variables:
 
 - `MODEL_PATH` : path to the pretrained checkpoint matching the selected backbone and MiRA mode.
 - `DATA_PATH` : path to the corresponding metadata CSV under [`datasets/dataSpecCSV_combined/`](datasets/dataSpecCSV_combined/).
 - `OUTPUT_DIR` : directory for fine-tuning outputs and checkpoints.
 
-The metadata CSV must reference the locally downloaded dataset. Also adapt the SLURM resource directives, module configuration, and Conda environment to your system.
+The metadata CSV must reference the locally downloaded dataset. 
 
-The provided scripts use DeepSpeed and preserve the model-specific MiRA configuration, including the redistribution mode, residual connection, statistics mode, and number of reweighted layers. To reproduce the reported results, retain these settings and use the corresponding dataset split.
+The provided scripts use DeepSpeed and preserve the model-specific MiRA configuration. 
 
 ## Inference
 Download a fine-tuned checkpoint from the table above and run:
