@@ -92,7 +92,43 @@ The pretrained checkpoints are available on Hugging Face.
 | ViT-H/16 | FlashLite | VoxCeleb2 | [HUGE-FlashLite](https://huggingface.co/ysrinria/MiRA/tree/main/pretrained_models/HUGE_FlashLite) | [script](https://github.com/ysrinria/MiRA/blob/main/scripts/pretrain/h100_fmpH_flash.slurm) |
 
 ### Pre-training from Scratch
-TBA
+
+All training scripts are provided under `scripts/pretrain/`. Each script submits a distributed job via `srun` on SLURM-managed GPUs.
+
+Before running, update the `DATA_PATH` variable in the script to point to your local VoxCeleb2 metadata CSV (see [Datasets](#datasets)).
+
+| Backbone | Exact mode | FlashLite mode | Nodes × GPUs | Batch size | Epochs |
+|----------|-----------|---------------|:------------:|:----------:|:------:|
+| ViT-B/16 | `h100_fmpB.slurm` | `h100_fmpB_flash.slurm` | 8 × 4 = 32 | 128 | 301 |
+| ViT-L/16 | `h100_fmpL.slurm` | `h100_fmpL_flash.slurm` | 10 × 4 = 40 | 64 | 201 |
+| ViT-H/16 | `h100_fmpH.slurm` | `h100_fmpH_flash.slurm` | 10 × 4 = 40 | 64 | 201 |
+
+```bash
+# ViT-B, Exact mode
+sbatch scripts/pretrain/h100_fmpB.slurm
+
+# ViT-B, FlashLite mode
+sbatch scripts/pretrain/h100_fmpB_flash.slurm
+
+# ViT-L, Exact mode
+sbatch scripts/pretrain/h100_fmpL.slurm
+
+# ViT-L, FlashLite mode
+sbatch scripts/pretrain/h100_fmpL_flash.slurm
+
+# ViT-H, Exact mode
+sbatch scripts/pretrain/h100_fmpH.slurm
+
+# ViT-H, FlashLite mode
+sbatch scripts/pretrain/h100_fmpH_flash.slurm
+```
+
+The key MiRA-specific flags used in these scripts are:
+
+- `--add_fmp_attention` : enable MiRA attention redistribution
+- `--fmp_num_last_layers N` : apply to the last N encoder layers (12 / 24 / 32 for ViT-B / L / H)
+- `--fmp_use_residual` : residual skip around the redistribution
+- `--use_fmp_flashlite` : use FlashLite mode (omit for Exact mode)
 
 ## Fine-tuning 
 
