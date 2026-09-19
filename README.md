@@ -194,8 +194,57 @@ The finetuned checkpoints are available on Hugging Face.
 ### Fine-tuning from Pretrained Checkpoints
 TBA
 
+아래 블록 내부 내용만 그대로 `README.md`에 복사하면 됩니다. 역슬래시나 제목 앞에 별도의 escape 문자를 추가하지 마세요.
+
 ## Only Inference
-TBA
+Download a fine-tuned checkpoint from the table above and run:
+
+```bash
+python run_mira_inference.py \
+    path/to/video_or_frame_directory \
+    path/to/finetuned_checkpoint/checkpoint-best \
+    --data-set DFEW_crop \
+    --mode flashlite \
+    --view-batch-size 1
+```
+
+### Input
+The input can be either:
+- a single video file, or
+- a directory containing the image frames of a single video.
+The input type is detected automatically. For frame-based input, images are ordered using the frame numbers in their filenames.
+
+### Checkpoint Configuration
+
+`--data-set` specifies the dataset on which the checkpoint was fine-tuned:
+- DFEW checkpoint: `DFEW_crop`
+- MAFW checkpoint: `MAFW_crop`
+- FERV39k checkpoint: `FERV39k`
+  
+This option selects the checkpoint-specific preprocessing and class-label mapping without requiring the original dataset.
+
+`--mode` must match the configuration used by the corresponding fine-tuning script:
+- `flashlite`: trained with `--add_fmp_attention`, `--fmp_use_residual`, and `--use_fmp_flashlite`
+- `exact`: trained with `--add_fmp_attention` and `--fmp_use_residual`, without `--use_fmp_flashlite`
+- `vanilla`: trained without `--add_fmp_attention`
+  
+The model architecture and number of classes are inferred automatically from the checkpoint.
+
+### Device and Memory
+The script automatically uses CUDA when available. A different device can be selected with --device.
+--view-batch-size determines how many test views are processed simultaneously. Use 1 to minimize memory usage on a single GPU, or increase it for faster inference when sufficient memory is available.
+
+### Output
+
+By default, the script prints the top-5 predictions and their probabilities to the terminal.
+
+| Option | Description |
+|---|---|
+| `--topk K` | Number of predictions to display. Default: `5`. |
+| `--output-json PATH` | Saves predictions, inference settings, sampled-frame indices, and view metadata to a JSON file. |
+| `--class-names LABELS` | Overrides class names using a JSON file, a text file with one label per line, or a comma-separated list. |
+
+`--class-names` is unnecessary for the provided checkpoints because `--data-set` automatically selects the corresponding class-label mapping.
 
 ## Citation
 
