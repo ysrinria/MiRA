@@ -234,11 +234,11 @@ The model architecture and number of classes are inferred automatically from the
 
 By default, the script prints the top-5 predictions and their probabilities to the terminal.
 
-| option | description |
-|---|---|
-| `--topk K` | Number of predictions to display. Default: `5`. |
-| `--output-json PATH` | Saves predictions, inference settings, sampled-frame indices, and view metadata to a JSON file. |
-| `--class-names LABELS` | Overrides class names using a JSON file, a text file with one label per line, or a comma-separated list. |
+Optional output arguments include:
+
+- `--topk K` — Number of predictions to display. Default: `5`.
+- `--output-json PATH` — Saves predictions, inference settings, sampled-frame indices, and view metadata to a JSON file.
+- `--class-names LABELS` — Overrides class names using a JSON file, a text file with one label per line, or a comma-separated list.
 
 `--class-names` is unnecessary for the provided checkpoints because `--data-set` automatically selects the corresponding class-label mapping.
 
