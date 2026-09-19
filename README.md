@@ -237,7 +237,7 @@ The input type is detected automatically. For frame-based input, images are orde
 - MAFW checkpoint: `MAFW_crop`
 - FERV39k checkpoint: `FERV39k`
   
-This option selects the checkpoint-specific preprocessing and class-label mapping without requiring the original dataset.
+This option selects the checkpoint-specific preprocessing and class-label without requiring the original dataset.
 
 `--mode` must match the configuration used by the corresponding fine-tuning script:
 - `flashlite`: trained with `--add_fmp_attention`, `--fmp_use_residual`, and `--use_fmp_flashlite`
